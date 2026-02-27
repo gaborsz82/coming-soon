@@ -1,83 +1,121 @@
+
+
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Coming Soon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Nati Szántó - Coming Soon</title>
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            overflow: hidden;
-        }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #5E7754; /* soft olive green */
+        font-family: 'Inter', sans-serif;
+        color: #F4F1EA;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 80px 8%;
+        gap: 60px;
+    }
+
+    .left {
+        max-width: 520px;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .subheading {
+        font-size: 15px;
+        font-weight: 300;
+        opacity: 0.9;
+        margin-bottom: 120px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 72px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.8;
+        font-weight: 300;
+        max-width: 450px;
+    }
+
+    .right img {
+        width: 500px;
+        max-width: 100%;
+        border-radius: 20px;
+        display: block;
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
         .container {
+            flex-direction: column;
             text-align: center;
-            backdrop-filter: blur(12px);
-            background: rgba(255, 255, 255, 0.08);
-            padding: 40px 60px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            animation: fadeIn 1.5s ease-in-out;
         }
 
-        .container img {
-            max-width: 250px;
-            width: 100%;
-            margin-bottom: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        .left {
+            max-width: 100%;
         }
 
         h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            letter-spacing: 2px;
+            font-size: 56px;
         }
 
-        p {
-            margin-top: 10px;
-            font-weight: 300;
-            opacity: 0.8;
+        .subheading {
+            margin-bottom: 60px;
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <img src="hero.jpg" alt="Coming Soon Image">
-        <h1>Coming Soon</h1>
-        <p>Kommt bald</p>
+<div class="container">
+    <div class="left">
+        <div class="logo">✻ Nati Szántó</div>
+        <div class="subheading">
+            Medical Personal Training<br>
+            in Vienna
+        </div>
+
+        <h1>Coming soon...</h1>
+
+        <p class="description">
+            Guiding people with chronic pain back into the freedom of an active life –
+            through movement they can trust
+        </p>
     </div>
+
+    <div class="right">
+        <img src="image.jpg" alt="Cycling image">
+    </div>
+</div>
 
 </body>
 </html>
